@@ -1,7 +1,9 @@
 {
-  "name": "conver-backend",
+  "name": "convert-backend",
   "type": "module",
   "scripts": {
+    "start": "tsx dist/index.cjs",
+    "build": "tsup src/index.ts",
     "dev": "tsx watch src/index.ts"
   },
   "dependencies": {
@@ -11,6 +13,8 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
-    "tsx": "^4.7.1"
+    "tsup": "^8.3.5",
+    "tsx": "^4.7.1",
+    "typescript": "^5.6.3"
   }
 }
