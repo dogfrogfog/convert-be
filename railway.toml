@@ -1,0 +1,11 @@
+[build]
+builder = "NIXPACKS"
+
+[build.nixpacksPlan.phases.setup]
+nixPkgs = ["nodejs", "pnpm"]
+
+[build.nixpacksPlan.phases.install]
+command = "pnpm install"
+
+[build.nixpacksPlan.phases.build]
+command = "pnpm build"

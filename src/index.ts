@@ -209,8 +209,8 @@ app.post("/upload", async (c) => {
 serve({
   fetch: app.fetch,
   port: 4444,
-  onListen: ({ port }) => {
-    console.log(`\n🌍 Server is running on http://localhost:${port}`);
-    console.log("📁 API endpoint: http://localhost:4444/api/upload");
-  },
+  // onListen: ({ port }) => {
+  // console.log(`\n🌍 Server is running on http://localhost:${port}`);
+  // console.log("📁 API endpoint: http://localhost:4444/api/upload");
+  // },
 });
