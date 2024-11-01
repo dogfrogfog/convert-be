@@ -11,7 +11,7 @@ console.log("🚀 Starting image conversion server...");
 app.use(
   "/*",
   cors({
-    origin: "http://localhost:3000",
+    origin: ["http://localhost:3000", "https://convert-fe-lilac.vercel.app"],
     allowMethods: ["POST"],
     allowHeaders: ["Content-Type"],
     exposeHeaders: ["Content-Length"],
